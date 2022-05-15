@@ -1,6 +1,6 @@
 import os, sys
 import argparse
-
+from pyfiglet import figlet_format
 
 parser = argparse.ArgumentParser(description='SQLIA detection via reverse proxy', epilog='example: python '+os.path.basename(__file__)+' localhost 8000')
 parser.add_argument('host', metavar='host', type=str, help='ip address of the server')
@@ -16,6 +16,9 @@ if HOST == '' or PORT == '':
 
 SOCKET = "http://" + HOST + ":" + PORT + "/"
 CHARSET = ['"', "'", ';', '=', '-', '--']
+
+banner = figlet_format('SQLIA Guardian')
+print(banner)
 
 from flask import Flask, request, redirect, url_for
 from requests import get, put, post
