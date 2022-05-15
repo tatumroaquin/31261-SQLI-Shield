@@ -1,6 +1,8 @@
 <h1 align="center">31261 - SQLIA Proxy-based Detection</h1>
 <h5 align="center">15/05/2022</h5>
 
+![sqlia-guardian-logo](https://user-images.githubusercontent.com/19354579/168476793-ad4668d9-a050-45e9-bfbd-ea553c7fc13b.PNG)
+
 <h3 align="center">Description</h3>
 
 A simple proxy designed as a proof of concept for the detection and prevention of SQLIA against a vulnerable web application hosted within the same network.
