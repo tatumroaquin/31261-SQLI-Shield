@@ -15,7 +15,7 @@ if HOST == '' or PORT == '':
     sys.exit()
 
 SOCKET = "http://" + HOST + ":" + PORT + "/"
-CHARSET = ['"', "'", ';', '=', '-', '--']
+TOKENS = ['"', "'", ';', '=', '-', '--', '/', '`', '~']
 
 banner = figlet_format('SQLIA Guardian')
 print(banner)
@@ -48,9 +48,9 @@ def sql_message():
 
 def sql_detect(payload):
     for key in payload:
-        for char in CHARSET:
+        for token in TOKENS:
             current = payload[key]
-            if current.find(char) != -1:
+            if current.find(token) != -1:
                 return True
     return False
 
