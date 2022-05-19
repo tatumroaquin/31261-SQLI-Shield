@@ -15,9 +15,9 @@ if HOST == '' or PORT == '':
     sys.exit()
 
 SOCKET = "http://" + HOST + ":" + PORT + "/"
-TOKENS = ['"', "'", ';', '=', '-', '--', '/', '`', '~']
+TOKENS = ['"', "'", ';', '=', '-', '--', '/', '`', '~', '%', '*']
 
-banner = figlet_format('SQLIA Guardian')
+banner = figlet_format('SQLI Shield')
 print(banner)
 
 from flask import Flask, request, redirect, url_for
