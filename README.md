@@ -1,7 +1,7 @@
 <h1 align="center">31261 - SQLIA Proxy-based Detection</h1>
 <h5 align="center">15/05/2022</h5>
 
-![sqlia-guardian-logo](https://user-images.githubusercontent.com/19354579/168476793-ad4668d9-a050-45e9-bfbd-ea553c7fc13b.PNG)
+![SQLI-Shield](https://user-images.githubusercontent.com/19354579/169407837-5e9368d9-642d-43bd-b6fc-c154d94f34c5.png)
 
 <h3 align="center">Description</h3>
 
