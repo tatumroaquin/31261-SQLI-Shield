@@ -18,6 +18,10 @@ A simple proxy designed as a proof of concept for the detection and prevention o
 2. install requirements
 - `pip install -r requirements.txt`
 
+3. assign/resign static ip
+- `bash static-ip.sh on`
+- `bash static-ip.sh off`
+
 4. run the proxy
 - `python app.py [host] [port]`
 - `python app.py localhost 8000`
